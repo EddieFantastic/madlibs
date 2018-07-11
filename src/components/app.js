@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import Header from './header';
 import Card from './card';
 
-class Home extends Component {
+class App extends Component {
   render() {
     return (
-      <div className="Home">
+      <div className="App">
         { Header('Bottega Mad Libs') }
         <Card />
       </div>
@@ -14,4 +14,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default App;

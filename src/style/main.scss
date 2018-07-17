@@ -1,9 +1,18 @@
-.home {
+.app {
     background-color: #d4cfcf;
+    display: grid;
+
+    justify-items: center;
+    grid-template-rows: [header-s] 218px [header-e card-s] 934px [card-e];
 }
 
+.header {
+    align-self: center;
+}
+
+
 .card {
-    height: 736px;
+    height: 934px;
     width:1240px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, .6);
     border-radius: 7px;
@@ -16,19 +25,24 @@
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
     }
 
 }
 
-.inputs {
-    &__title {
+.input {
+    display:grid;
+    grid-template-columns: [number-s] 26px [number-e input-s]1fr [input-e];
 
+    &__title {
+        grid-column: input-s/input-e;
     }
     input{
-
+        grid-column: input-s/input-e;
     }
     &__number{
-
+        grid-column: number-s/number-e;
     }
 }
 

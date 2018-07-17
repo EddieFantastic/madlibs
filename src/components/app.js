@@ -6,7 +6,7 @@ import Card from './card';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="app">
         { Header('Bottega Mad Libs') }
         <Card />
       </div>

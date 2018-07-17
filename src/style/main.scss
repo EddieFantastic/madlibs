@@ -2,9 +2,33 @@
     background-color: #d4cfcf;
 }
 
-.Card {
+.card {
     height: 736px;
     width:1240px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, .6);
     border-radius: 7px;
+
+    display:grid;
+    grid-template-rows: 1fr 50px;
+
+    &__inputs {
+        background-color: skyblue;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+
 }
+
+.inputs {
+    &__title {
+
+    }
+    input{
+
+    }
+    &__number{
+
+    }
+}
+

@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 
 class Content extends Component {
-    renderLabel(data) {
 
+    constructor() {
+        super()
+        this.count = 1;
+    }
+    
+
+    renderLabel(data) {
         return [
             // className="card__content__label"
+            <div className="card__content__label"> {this.count++} </div> ,
             <b>{data}</b>
     
         ]

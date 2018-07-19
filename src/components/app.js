@@ -17,8 +17,5 @@ class App extends Component {
 export default App;
 
 //things we need to fix
-//placeholder
-//grey and green number labels
-//content labels - numbered
 //generate button sace-cardHeight
 //bold issues
